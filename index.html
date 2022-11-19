@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6-gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    img{
+        width: 100%;
+    }
+    :root{
+        --roig: #973B3B;
+        --gris: #9C9696;
+        --negre: #000000;
+    }
+    h1{
+        padding: 2em 0;
+        font-family: 'Lato', sans-serif;
+        color: var(--gris);
+        font-weight: 400;
+        font-size: 0.6em;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+    } 
+    h2{
+        padding: 0.2em 0;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.2em;
+        font-weight: 700;
+        color: var(--roig)
+    }
+    p{
+        font-family: 'Lato', sans-serif;
+        font-size: 0.9em;
+        font-weight: 400;
+        color: var(--negre)
+    }
+    .gallery{
+        padding: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
+    }
+    .card{
+        transition: flex-grow 1s;
+        border-radius: 0.3em;
+        flex-basis: 30%;
+        border: 0.2em solid var(--roig);
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+    .card:nth-child(1) img{
+        flex-grow: 1;
+        object-position: top;
+    }
+    .card:nth-child(2) img{
+        flex-grow: 1;
+        object-position: top;
+    }
+    .card:nth-child(3) img{
+        flex-grow: 1;
+        object-position: bottom;
+    }
+    .card:nth-child(4) img{
+        flex-grow: 1;
+        object-position: top;
+    }
+    .card:nth-child(5) img{
+        flex-grow: 1;
+        object-position: center;
+    }
+    .card:hover{
+        flex-grow: 1;
+        box-shadow: 0.1em 0.1em 0.5em var(--gris);
+    }
+    .card_img{
+        width: 100%;
+        height: 270px;
+    }
+    .card_img img{
+        object-fit: cover;
+        height: 100%;
+    }
+</style>
+<body>
+    <main>
+        <div class="gallery">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/01.jpeg" alt="">
+                </figure>
+                <header>
+                    <h1>Dante Gabriel Rossetti</h1>
+                    <h2>Dama lilith</h2>
+                    <p>Fascinado por el atractivo físico de las mujeres, Rossetti imagina aquí a una mujer fatal legendaria como una belleza del siglo XIX ensimismada que se peina y expone seductoramente los hombros. Las flores cercanas simbolizan diferentes tipos de amor. En la literatura judía, la hechicera Lilith es descrita como la primera esposa de Adán, y su carácter está subrayado por líneas del Fausto de Goethe adjuntas por Rossetti.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                     <img src="img/02.jpeg" alt="">
+                </figure>
+                <header>
+                    <h1>Tiziano (Tiziano Vecellio)</h1>
+                    <h2>Venus y Adonis</h2>
+                    <p>Los relatos de las Metamorfosis de Ovidio inspiraron a Tiziano a pintar lo que llamó poesie, o poesía en pintura. Aquí, Venus intenta evitar que su amante se vaya de caza, temiendo, correctamente, que lo maten. El estado de ánimo de sensualidad, transmitido por la hermosa representación de Venus, vista desde atrás, realza la sensación del espectador del final trágico de esta historia, expresado a través de sus miradas.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                     <img src="img/03.jpeg" alt="">
+                </figure>
+                <header>
+                    <h1>Seymour Joseph Guy</h1>
+                    <h2>El concurso del ramo</h2>
+                    <p>Guy, nacido y formado en Inglaterra, se instaló en 1854 en Nueva York. Típico de su dominio de la forma lúcida es esta encantadora "pieza de conversación" (un retrato con elementos narrativos) encargada por Robert Gordon en 1866. Tres de los niños Gordon han terminado de desayunar y parecen competir por un pequeño ramillete antes de partir hacia la escuela.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/04.jpeg" alt="">
+                </figure>
+                <header>
+                    <h1>Thomas Gainsborough</h1>
+                    <h2>Cottage Children (Los recolectores de madera)</h2>
+                    <p>Guy, nacido y formado en Inglaterra, se instaló en 1854 en Nueva York. Típico de su dominio de la forma lúcida es esta encantadora "pieza de conversación" (un retrato con elementos narrativos) encargada por Robert Gordon en 1866. Tres de los niños Gordon han terminado de desayunar y parecen competir por un pequeño ramillete antes de partir hacia la escuela.</p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/05.jpeg" alt="">
+                </figure>
+                 <header>
+                    <h1>François Boucher</h1>
+                    <h2>El tocador de Venus</h2>
+                    <p>Boucher ejecutó esta pintura para Madame de Pompadour, la poderosa amante oficial de Luis XV y la mecenas más importante de Boucher desde 1747 hasta su muerte en 1764. Originalmente decoraban los apartamentos de baño (una lujosa suite de tres habitaciones) en el Château de Bellevue de Pompadour. La construcción de su castillo motivó muchos de los encargos más importantes de pintura y escultura rococó.</p>
+                </header> 
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/06.jpeg" alt="">
+                </figure>
+                 <header>
+                    <h1>Jean-Baptiste Greuze</h1>
+                    <h2>Huevos rotos</h2>
+                    <p>Al moralizar temas de género como este, Greuze formuló brillantemente una solución al callejón sin salida que los temas arcanos de la historia planteaban a los artistas y al público. En el Salón de 1757, un crítico incluso declaró que la pose de esta joven sirvienta, cuya pérdida de la virginidad está simbolizada por los huevos rotos, era digna de un pintor de historia.</p>
+                </header> 
+            </div> 
+    </main>
+</body>
+</html>
